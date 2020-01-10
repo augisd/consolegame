@@ -23,16 +23,16 @@ namespace MenuDrivenGame
                 switch (Game.CurrentLocation)
                 {
                     case 0:
-                        Game.HandleHubInput(_choice);
+                        HandleInput.Hub(_choice);
                         break;
                     case 1:
-                        Game.HandleCrossroadsInput(_choice);
+                        HandleInput.Crossroads(_choice);
                         break;
                     case 2:
                     case 3:
                     case 4:
                     case 5:
-                        Game.HandleLevelInput(_choice);
+                        HandleInput.Level(_choice);
                         break;
                 }
                 Console.Clear();
