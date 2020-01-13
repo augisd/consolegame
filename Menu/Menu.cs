@@ -12,6 +12,7 @@ namespace MenuDrivenGame
         public static void ShowMenu()                                               // Display options available to the player based on their current location
         {
             HUD.ShowHUD();
+            var sword = new Sword("Sword");
             Utility.RevealDescription(Location.Description[Game.CurrentLocation]);
             Console.WriteLine("...");
             Console.WriteLine("\tSelect one of the options below to continue.");

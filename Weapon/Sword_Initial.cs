@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MenuDrivenGame
 {
-    public class Weapon
+    public class Sword_Initial
     {
         private string Name;
         private int RarityIndex;
@@ -15,7 +15,7 @@ namespace MenuDrivenGame
         private double TotalDamage;
         private int DropRateModifier = 100;
 
-        public Weapon()
+        public Sword_Initial()
         {
             Random random = new Random();
             int randomNumber = random.Next(DropRateModifier);

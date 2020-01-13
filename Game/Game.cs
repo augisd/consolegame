@@ -8,24 +8,29 @@ namespace MenuDrivenGame
 {
     public static class Game
     {
-        static bool _running = true;                                               // Static properties
-        static bool Goal = false;
-        private static int _currentLocation = 0;                                  // Always start at The Hub
-        public static int Health = 5;
+        private static bool _running = true;                                              
+        private static int _currentLocation = 0;                                  
+        private static int _health = 5;
 
         public static int CurrentLocation 
         {
-            get { return _currentLocation; }
-            set { _currentLocation = value; }
+            get => _currentLocation;
+            set => _currentLocation = value;
         }
 
         public static bool Running
         {
-            get { return _running; }
-            set { _running = value; }
+            get => _running;
+            set => _running = value;
         }
 
-        public static void Play()                                               // Start the main loop
+        public static int Health
+        {
+            get => _health;
+            set => _health = value;
+        }
+
+        public static void Play()                                               
         {
             Start();
             while (_running)
@@ -35,7 +40,7 @@ namespace MenuDrivenGame
             End();
         }
 
-        public static void Start()                                              // What happens when the game is started
+        public static void Start()                                              
         {
             Console.Clear();
             Console.WriteLine("Some introductory text..");
@@ -44,7 +49,7 @@ namespace MenuDrivenGame
             Console.Clear();
         }
 
-        public static void End()                                                // What happens when the game ends
+        public static void End()                                                
         {
             Console.WriteLine("Game Over. Press any key to exit.");
             Console.ReadKey();

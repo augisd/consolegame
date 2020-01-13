@@ -52,7 +52,7 @@ namespace MenuDrivenGame
             switch (choice)
             {
                 case 1:
-                    Console.WriteLine("Shop functionality to be implemented.");
+                    Console.WriteLine("Shop functionality to be implemented.");                    
                     break;
                 case 2:
                     Console.WriteLine("Health replenished.");
